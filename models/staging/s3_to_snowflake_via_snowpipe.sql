@@ -28,66 +28,88 @@ DESC STAGE ext_stage
 -- Create snowpipes to distribute data to different target tables
 --acquisition
 CREATE
-or REPLACE PIPE raw.raw.mypipe_acquisition auto_ingest = true AS COPY INTO RAW.RAW.acquisition
+or REPLACE PIPE raw.raw.mypipe_acquisition 
+auto_ingest = true 
+AS COPY INTO RAW.RAW.acquisition
 FROM
     @raw.raw.ext_stage/acquisition on_error = CONTINUE;
 
  --education
     CREATE
-    or REPLACE PIPE raw.raw.mypipe_education auto_ingest = true AS COPY INTO RAW.RAW.education
+    or REPLACE PIPE raw.raw.mypipe_education 
+    auto_ingest = true 
+    AS COPY INTO RAW.RAW.education
 FROM
     @raw.raw.ext_stage/education on_error = CONTINUE;
 
 --funding_rounds
     CREATE
-    or REPLACE PIPE raw.raw.mypipe_funding_rounds auto_ingest = true AS COPY INTO RAW.RAW.funding_rounds
+    or REPLACE PIPE raw.raw.mypipe_funding_rounds 
+    auto_ingest = true 
+    AS COPY INTO RAW.RAW.funding_rounds
 FROM
     @raw.raw.ext_stage/funding_rounds on_error = CONTINUE;
 
 --funds
     CREATE
-    or REPLACE PIPE raw.raw.mypipe_funds auto_ingest = true AS COPY INTO RAW.RAW.funds
+    or REPLACE PIPE raw.raw.mypipe_funds 
+    auto_ingest = true 
+    AS COPY INTO RAW.RAW.funds
 FROM
     @raw.raw.ext_stage/funds on_error = CONTINUE;
 
 --investments
     CREATE
-    or REPLACE PIPE raw.raw.mypipe_investments auto_ingest = true AS COPY INTO RAW.RAW.investments
+    or REPLACE PIPE raw.raw.mypipe_investments 
+    auto_ingest = true 
+    AS COPY INTO RAW.RAW.investments
 FROM
     @raw.raw.ext_stage/investments on_error = CONTINUE;
 
 --ipos
     CREATE
-    or REPLACE PIPE raw.raw.mypipe_ipos auto_ingest = true AS COPY INTO RAW.RAW.ipos
+    or REPLACE PIPE raw.raw.mypipe_ipos 
+    auto_ingest = true 
+    AS COPY INTO RAW.RAW.ipos
 FROM
     @raw.raw.ext_stage/ipos on_error = CONTINUE;
 
 --milestones
     CREATE
-    or REPLACE PIPE raw.raw.mypipe_milestones auto_ingest = true AS COPY INTO RAW.RAW.milestones
+    or REPLACE PIPE raw.raw.mypipe_milestones 
+    auto_ingest = true 
+    AS COPY INTO RAW.RAW.milestones
 FROM
     @raw.raw.ext_stage/milestones on_error = CONTINUE;
 
 --summary
     CREATE
-    or REPLACE PIPE raw.raw.mypipe_summary auto_ingest = true AS COPY INTO RAW.RAW.summary
+    or REPLACE PIPE raw.raw.mypipe_summary 
+    auto_ingest = true 
+    AS COPY INTO RAW.RAW.summary
 FROM
     @raw.raw.ext_stage/summary on_error = CONTINUE;
 
 --offices
     CREATE
-    or REPLACE PIPE raw.raw.mypipe_offices auto_ingest = true AS COPY INTO RAW.RAW.offices
+    or REPLACE PIPE raw.raw.mypipe_offices 
+    auto_ingest = true 
+    AS COPY INTO RAW.RAW.offices
 FROM
     @raw.raw.ext_stage/offices on_error = CONTINUE;
 
 --people
     CREATE
-    or REPLACE PIPE raw.raw.mypipe_people auto_ingest = true AS COPY INTO RAW.RAW.people
+    or REPLACE PIPE raw.raw.mypipe_people 
+    auto_ingest = true 
+    AS COPY INTO RAW.RAW.people
 FROM
     @raw.raw.ext_stage/people on_error = CONTINUE;
 
 --relationships
     CREATE
-    or REPLACE PIPE raw.raw.mypipe_relationships auto_ingest = true AS COPY INTO RAW.RAW.relationships
+    or REPLACE PIPE raw.raw.mypipe_relationships 
+    auto_ingest = true 
+    AS COPY INTO RAW.RAW.relationships
 FROM
     @raw.raw.ext_stage/relationships on_error = CONTINUE;
