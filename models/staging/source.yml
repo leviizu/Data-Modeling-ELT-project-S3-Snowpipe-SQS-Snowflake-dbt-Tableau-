@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: startup_source
+    database: raw  
+    schema: raw  
+    tables:
+      - name: acquisition
+      - name: funding_rounds
+      - name: funds
+      - name: investments
+      - name: ipos
+      - name: offices
+      - name: summary
+
+
