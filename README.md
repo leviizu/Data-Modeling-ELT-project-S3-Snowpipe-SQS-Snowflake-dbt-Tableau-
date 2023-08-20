@@ -2,6 +2,14 @@ Welcome to your new dbt project!
 
 ### Using the starter project
 
+Create user with programmatic access
+Attach AWS S3 full access policy
+
+Create a new role under another aws account
+Activate ‘third party access and assign external id
+Assign AWS S3 full access policy
+
+
 Try running the following commands:
 - dbt run
 - dbt test
