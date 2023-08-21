@@ -1,5 +1,8 @@
 Welcome to your new dbt project!
 
+<img width="832" alt="image" src="https://github.com/leviizu/ELT-project-S3-Snowpipe-SQS-Snowflake-dbt-Tableau/assets/96123459/969ca546-8606-432f-905e-f8492f660faf">
+
+
 ### Using the starter project
 
 Create user with programmatic access
