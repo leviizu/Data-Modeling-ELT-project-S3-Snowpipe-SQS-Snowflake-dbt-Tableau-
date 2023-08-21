@@ -5,7 +5,7 @@ Welcome to your new dbt project!
 <img width="693" alt="image" src="https://github.com/leviizu/ELT-project-S3-Snowpipe-SQS-Snowflake-dbt-Tableau/assets/96123459/82f61609-d801-4f3a-beb4-7a50aa52e021">
 
 
-<img width="693" alt="image" src="https://github.com/leviizu/ELT-project-S3-Snowpipe-SQS-Snowflake-dbt-Tableau/assets/96123459/8b44a5fe-17d0-4971-80be-2b9fd46a36c5">
+<img width="693" alt="image" src="https://github.com/leviizu/ELT-project-S3-Snowpipe-SQS-Snowflake-dbt-Tableau/assets/96123459/be7847ed-b6d0-4bbb-9d5e-2861f5bb1c73">
 
 ### Using the starter project
 
