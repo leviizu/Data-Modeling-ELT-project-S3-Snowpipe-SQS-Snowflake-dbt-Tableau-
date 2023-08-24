@@ -1,6 +1,7 @@
 Welcome to your new dbt project!
 ### Architecture Design
- 
+
+Below is the Architecture diagram 
 ![flow](https://github.com/leviizu/ELT-project-S3-Snowpipe-SQS-Snowflake-dbt-Tableau/assets/96123459/215adbec-8168-4ab6-bb27-5fe4edf058a6)
 
 
