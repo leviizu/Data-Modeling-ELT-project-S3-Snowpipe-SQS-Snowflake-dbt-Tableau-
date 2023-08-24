@@ -4,7 +4,6 @@ Welcome to your new dbt project!
 
 
 
-
 ### Conceptual Model
 ![conceptual](https://github.com/leviizu/ELT-project-S3-Snowpipe-SQS-Snowflake-dbt-Tableau/assets/96123459/09e1d032-f105-4633-b06e-502f5026d9f2)
 
