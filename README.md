@@ -24,6 +24,8 @@ Below is the Conceptual diagram:
 
  
 ### Physical Model
+Below is the Conceptual diagram:
+
 ![physical](https://github.com/leviizu/ELT-project-S3-Snowpipe-SQS-Snowflake-dbt-Tableau/assets/96123459/ca3e75b9-25b9-4675-a815-97173a616d97)
 
 
