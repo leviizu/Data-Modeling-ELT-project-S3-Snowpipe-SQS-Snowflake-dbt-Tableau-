@@ -12,7 +12,7 @@ Welcome to your new dbt project!
 
  
 ### Logical Model
-- ![logcal](https://github.com/leviizu/ELT-project-S3-Snowpipe-SQS-Snowflake-dbt-Tableau/assets/96123459/e89390d7-e3f9-4eb1-8b94-c722e05ded24)
+![logcal](https://github.com/leviizu/ELT-project-S3-Snowpipe-SQS-Snowflake-dbt-Tableau/assets/96123459/e89390d7-e3f9-4eb1-8b94-c722e05ded24)
 
 
 
