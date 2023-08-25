@@ -1,4 +1,20 @@
-Welcome to your new dbt project!
+Welcome to my dbt project!
+
+#### User
+AWS user with programmatic access is created with attached AWS S3 full access policy
+
+#### Role
+A new role is created under `another aws account` with third party access activated and external id along side AWS S3 full access policy assigned
+
+#### Dataset 
+normalized dataset are downloaded from Kaggle and uploaded into S3 bucket
+
+#### Extract and load 
+Snowpipe is set up to extract and load files from S3 to Snowflake
+
+#### Messaging
+SQS service is set up and tested at the bucket level to alert snowpipe whenever there is a new file demped into the bucket
+
 ### Architecture Design
 
 Below is the Architecture diagram:
