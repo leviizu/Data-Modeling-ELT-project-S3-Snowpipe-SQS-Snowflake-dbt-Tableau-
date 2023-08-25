@@ -1,5 +1,5 @@
 select
-id,
+id as object_id,
 entity_type,
 entity_id ,
 parent_id ,

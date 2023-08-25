@@ -10,7 +10,6 @@ sources:
       - name: funds
       - name: investments
       - name: ipos
-      - name: offices
       - name: summary
 
 
