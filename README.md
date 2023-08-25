@@ -1,5 +1,8 @@
 Welcome to my dbt project!
 
+The idea of the project is to demonstrate my ability to work on ELT projects on an end to end capacity; From extraction through modelling to visualisation
+
+
 #### User
 AWS user with programmatic access is created with attached AWS S3 full access policy
 
