@@ -1,0 +1,45 @@
+version: 2
+
+models:
+  - name: bridge_investment
+    columns: 
+      - name: investment_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_startup
+    columns:
+      - name: object_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_acquisition
+    columns: 
+      - name: acquisition_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_funding_rounds
+    columns:
+      - name: funding_round_id
+        tests:
+          - unique
+          - not_null 
+
+  - name: fact_funds
+    columns: 
+      - name: fund_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_ipos
+    columns:
+      - name: ipo_id
+        tests:
+          - unique
+          - not_null 
+  
