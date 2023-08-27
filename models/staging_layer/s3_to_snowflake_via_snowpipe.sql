@@ -1,3 +1,4 @@
+-- Snowpipe pipeline for extracting and loading data from S3 bucket to Snowflake
 -- create integration object for external storage
 CREATE
 or REPLACE storage integration S3_VC 
