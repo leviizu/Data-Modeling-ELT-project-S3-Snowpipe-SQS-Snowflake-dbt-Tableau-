@@ -14,8 +14,9 @@ with
             ip.source_description,
             ip.created_at,
             current_timestamp() as ingestion_date
-        from {{ ref("fact_ipos") }} ip
-        left join {{ ref("dim_startup") }} st on st.object_id = ip.startup_object_id
+        
+        from {{ ref("dim_startup") }} st
+        inner join {{ ref("fact_ipos") }} ip on st.object_id = ip.startup_object_id
     )
 
 select *
