@@ -1,6 +1,12 @@
 Welcome to my dbt project!
 
-The idea of the project is to demonstrate my ability to work on ELT projects on an end to end capacity; From extraction through modelling to visualisation
+The idea of the project is to demonstrate my ability to work on ELT projects on an end to end capacity; From extraction through modelling to visualisation:
+
+- Here normalized start up investment data is downlowded from kaggle via https://www.kaggle.com/datasets/justinas/startup-investments?select=people.csv
+- The data is stored in an S3 bucket, user, roles are created and necessary permissions are set 
+- A snowpipe pipeline is set up and automated via sqs messaging service 
+- This sqs messaging service's linked to the S3 bucket and triggers the snowpipe pipeline to extract and load data to snowflake whenever a new file will be dumped into the S3 bucket
+
 
 
 #### User
