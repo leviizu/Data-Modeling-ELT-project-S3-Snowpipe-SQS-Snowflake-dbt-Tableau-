@@ -45,6 +45,10 @@ Below is the physical model diagram:
 
 ![physical](https://github.com/leviizu/ELT-project-S3-Snowpipe-SQS-Snowflake-dbt-Tableau/assets/96123459/ca3e75b9-25b9-4675-a815-97173a616d97)
 
+### Tableau Workbook: https://public.tableau.com/app/profile/levy.shemtov/viz/Startup_df/Dashboard1
+
+<img width="1052" alt="Screenshot 2023-08-28 at 9 40 52" src="https://github.com/leviizu/ELT-project-S3-Snowpipe-SQS-Snowflake-dbt-Tableau/assets/96123459/f29f40a9-02d9-4b00-846e-2d882f362c57">
+
 
 ### Using the starter project
 
