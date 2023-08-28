@@ -24,8 +24,6 @@ with
             current_timestamp() as updated_at
         from {{ ref("stg_funding_rounds") }}
         group by all
-        -- removing duplicates
-        having count(*) = 1
     )
 
 select *

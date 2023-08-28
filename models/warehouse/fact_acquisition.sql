@@ -14,8 +14,6 @@ with
             current_timestamp() as updated_at
         from {{ ref("stg_acquisition") }}
         group by all
-        -- removing duplicates
-        having count(*) = 1
     )
 
 select *
