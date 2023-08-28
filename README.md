@@ -3,26 +3,18 @@ Welcome to my dbt project!
 The idea of the project is to demonstrate my ability to work on ELT projects on an end to end capacity; From extraction through modelling to visualisation:
 
 - Here normalized start up investment data is downlowded from kaggle via https://www.kaggle.com/datasets/justinas/startup-investments?select=people.csv
-- The data is stored in an S3 bucket, user, roles are created and necessary permissions are set 
-- A snowpipe pipeline is set up and automated via sqs messaging service 
+- The data is stored in an S3 bucket after  user, roles have been created and necessary permissions set up
+- Tables with field names and data types will be created through ddl sql queries on snowflake
+- A snowpipe pipeline is set up in snowflake and automated via sqs messaging service 
 - This sqs messaging service's linked to the S3 bucket and triggers the snowpipe pipeline to extract and load data to snowflake whenever a new file will be dumped into the S3 bucket
-
-
-
-#### User
-AWS user with programmatic access is created with attached AWS S3 full access policy
-
-#### Role
-A new role is created under `another aws account` with third party access activated and external id along side AWS S3 full access policy assigned
-
-#### Dataset 
-normalized dataset are downloaded from Kaggle and uploaded into S3 bucket
-
-#### Extract and load 
-Snowpipe is set up to extract and load files from S3 to Snowflake
-
-#### Messaging
-SQS service is set up and tested at the bucket level to alert snowpipe whenever there is a new file demped into the bucket
+- conceptual, logical and physical models are designed utilizing a hybrid combination of Kimball and One Big Table methods
+- The data architecture contains three layers; staging layer, warehouse layer, Analytics layer(OBT)
+- Physical implementation of different layers will be in dbt
+- dbt files are created and version control is established 
+- The different layers are created, and generic test like unique and not_nulls are performed on the models
+- Single tests to assert positive outcomes for certain values are also performed
+- Model is built
+- OBTs are visualised on Tableau
 
 ### Architecture Design
 
