@@ -22,24 +22,6 @@ Below is the Architecture diagram:
 
 ![flow](https://github.com/leviizu/ELT-project-S3-Snowpipe-SQS-Snowflake-dbt-Tableau/assets/96123459/215adbec-8168-4ab6-bb27-5fe4edf058a6)
 
-
- 
-### Conceptual Model
-Below is the Conceptual model diagram:
-
-![conceptual](https://github.com/leviizu/ELT-project-S3-Snowpipe-SQS-Snowflake-dbt-Tableau/assets/96123459/09e1d032-f105-4633-b06e-502f5026d9f2)
-
-
-
- 
-### Logical Model
-Below is the logical diagram model:
-
-![logcal](https://github.com/leviizu/ELT-project-S3-Snowpipe-SQS-Snowflake-dbt-Tableau/assets/96123459/e89390d7-e3f9-4eb1-8b94-c722e05ded24)
-
-
-
- 
 ### Physical Model
 Below is the physical model diagram:
 
