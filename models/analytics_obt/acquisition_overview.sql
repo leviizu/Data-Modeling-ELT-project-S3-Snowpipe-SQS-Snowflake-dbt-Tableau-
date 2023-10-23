@@ -33,6 +33,7 @@ with
             acquisition_asset aa
             on aa.asset_id = aq.acquired_object_id
             --and aq.acquisition_id = aa.acquisition_id
+      
     )
 
 select *
