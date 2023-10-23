@@ -4,20 +4,20 @@ with
         select inv.investment_id, inv.funding_round_id, st.name as investor
         from {{ ref("dim_startup") }} st
         left join
-            {{ ref("bridge_investment") }} inv on inv.investor_object_id = st.object_id
+            {{ ref("fact_investment") }} inv on inv.investor_object_id = st.object_id
     ),
     -- asset
     asset as (
         select inv.investment_id, inv.funding_round_id, st.name as asset
         from {{ ref("dim_startup") }} st
         left join
-            {{ ref("bridge_investment") }} inv on inv.funded_object_id = st.object_id
+            {{ ref("fact_investment") }} inv on inv.funded_object_id = st.object_id
 
     ),
     -- funds
     funding as (
         select
-            inv.investment_id,
+            fr.investment_id,
             fr.funding_round_id,
             fr.funded_entity_object_id,
             fr.funded_at,
@@ -37,10 +37,10 @@ with
             fr.is_last_round,
             fr.source_url,
             fr.source_description
-        from {{ ref("fact_funding_rounds") }} fr
-        left join
-            {{ ref("bridge_investment") }} inv
-            on fr.funding_round_id = inv.funding_round_id
+        from 
+            {{ ref("fact_investment") }} i
+           
+
 
     ),
     investment as (

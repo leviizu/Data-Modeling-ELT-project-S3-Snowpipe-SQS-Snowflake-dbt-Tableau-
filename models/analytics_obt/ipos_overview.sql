@@ -17,6 +17,7 @@ with
         
         from {{ ref("dim_startup") }} st
         inner join {{ ref("fact_ipos") }} ip on st.object_id = ip.startup_object_id
+        
     )
 
 select *

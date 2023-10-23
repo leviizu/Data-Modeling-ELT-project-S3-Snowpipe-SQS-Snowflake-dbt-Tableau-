@@ -1,19 +1,33 @@
 version: 2
 
 models:
-  - name: bridge_investment
+  - name: fact_investment
+    description: this is the investment table
     columns: 
       - name: investment_id
+        description: this is the unique id for every investment
         tests:
           - unique
           - not_null
-
+      - name: funded_entity_object_id
+        tests:
+            - relationships:
+                to: ref('dim_startup')
+                field: object_id
+      - name: raised_amount_usd
+        tests:
+          - check_col_equals:
+              column_name2: raised_amount
   - name: dim_startup
     columns:
       - name: object_id
         tests:
           - unique
           - not_null
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['operating','acquired']
 
   - name: fact_acquisition
     columns: 
@@ -21,13 +35,6 @@ models:
         tests:
           - unique
           - not_null
-
-  - name: fact_funding_rounds
-    columns:
-      - name: funding_round_id
-        tests:
-          - unique
-          - not_null 
 
   - name: fact_funds
     columns: 

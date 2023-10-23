@@ -31,11 +31,6 @@ with
             current_timestamp() as ingestion_date
         from {{ ref("stg_startup") }}
         group by all
-        having count(*) = 1
-    ),
-    unique_startup as (
-        select *, row_number() over (partition by object_id order by object_id) as id
-        from startup
     )
 select
     object_id,
