@@ -25,7 +25,7 @@ Below is the Architecture diagram:
 ### Physical Model
 Below is the physical model diagram:
 
-![physical](https://github.com/leviizu/ELT-project-S3-Snowpipe-SQS-Snowflake-dbt-Tableau/assets/96123459/ca3e75b9-25b9-4675-a815-97173a616d97)
+
 
 ### Tableau Workbook: https://public.tableau.com/app/profile/levy.shemtov/viz/Startup_df/Dashboard1
 
